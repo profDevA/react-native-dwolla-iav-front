@@ -1,5 +1,6 @@
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import React, {Component} from 'react'
+import {Platform, StyleSheet, Text, View} from 'react-native'
+import { ThemeContext, getTheme } from 'react-native-material-ui'
 
 import AppNavigator from './routes'
 
@@ -10,6 +11,8 @@ import thunk from 'redux-thunk'
 
 import { GoogleAnalyticsTracker } from 'react-native-google-analytics-bridge'
 import { ONESIGNAL_ID, GA_TRACKING_ID } from '@config'
+
+import { uiTheme } from './themes'
 
 const tracker = new GoogleAnalyticsTracker(GA_TRACKING_ID);
 
@@ -42,15 +45,17 @@ export default class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <AppNavigator 
-          onNavigationStateChange={(prevState, currentState) => {
-            const currentScreen = getActiveRouteName(currentState);
-            const prevScreen = getActiveRouteName(prevState);
-            if (prevScreen !== currentScreen) {
-              tracker.trackScreenView(currentScreen);
-            }
-          }}
-        />
+        <ThemeContext.Provider value={getTheme(uiTheme)}>
+          <AppNavigator 
+            onNavigationStateChange={(prevState, currentState) => {
+              const currentScreen = getActiveRouteName(currentState);
+              const prevScreen = getActiveRouteName(prevState);
+              if (prevScreen !== currentScreen) {
+                tracker.trackScreenView(currentScreen);
+              }
+            }}
+          />
+        </ThemeContext.Provider>
       </Provider>
     );
   }
