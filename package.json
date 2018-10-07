@@ -1,0 +1,36 @@
+{
+  "name": "RNSail",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "16.5.0",
+    "react-native": "0.57.2",
+    "react-native-fast-image": "^5.0.10",
+    "react-native-google-analytics-bridge": "^6.1.0",
+    "react-native-material-ui": "^1.30.1",
+    "react-native-vector-icons": "^6.0.1",
+    "react-navigation": "^2.17.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-jest": "23.6.0",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.48.0",
+    "react-test-renderer": "16.5.0"
+  },
+  "rnpm": {
+    "assets": [
+      "./App/assets/fonts"
+    ]
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
