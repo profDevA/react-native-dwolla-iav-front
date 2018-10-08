@@ -82,6 +82,4 @@ Please find it in this articles.
  
 Cheers!
  
-Sunaryo Hadi
-
-https://www.sunaryohadi.info
+[Sunaryo Hadi](https://www.sunaryohadi.info)
