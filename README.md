@@ -1,8 +1,31 @@
 # RNSail - React Native Starter
 
-My starter kit for react native projects.  This is the implementation of using of [React Native Material UI](https://github.com/xotahal/react-native-material-ui) with [React Navigation](https://github.com/react-navigation/react-navigation).
+My starter kit for react native projects.  
 
-It's also included react-redux and screen tracking implementation as in React navigation suggested.
+This is the implementation of using:
+* React Native 0.57.2
+* [React Native Material UI](https://github.com/xotahal/react-native-material-ui) 
+* [React Navigation](https://github.com/react-navigation/react-navigation)
+* React-redux
+* [Screen Tracking Google Analytic](https://github.com/idehub/react-native-google-analytics-bridge)
+
+## Folder Structure
+
+The folder arranged as below
+    
+    ├── App
+    |   ├── actions                 # redux actions
+    |   ├── assets                  # assets (such as linked font)
+    |   ├── components              # custom components used
+    |   ├── config                  # configuration
+    |   ├── reducers                # reducers (redux)
+    |   ├── routes                  # routing navigation
+    |   ├── screens                 # screen of each page 
+    |   ├── themes                  # theme styling
+    |   └── index.js
+    ├── ...
+    |
+
 
 ## Installation
 
