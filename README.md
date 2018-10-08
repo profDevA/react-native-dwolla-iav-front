@@ -2,29 +2,29 @@
 
 My starter kit for react native projects.  
 
-This is the implementation of using:
-* React Native 0.57.2
-* [React Native Material UI](https://github.com/xotahal/react-native-material-ui) 
-* [React Navigation](https://github.com/react-navigation/react-navigation)
-* React-redux
+This starter is using:
+* [React Native](https://facebook.github.io/react-native/) 0.57.2
+* [React Native Material UI](https://github.com/xotahal/react-native-material-ui) 1.30.1
+* [React Navigation](https://github.com/react-navigation/react-navigation) 2.17.0
+* React-redux 
 * [Screen Tracking Google Analytic](https://github.com/idehub/react-native-google-analytics-bridge)
 
 ## Folder Structure
 
-The folder arranged as below
+The folder following known best practices, arranged as:
     
     ├── App
-    |   ├── actions                 # redux actions
-    |   ├── assets                  # assets (such as linked font)
-    |   ├── components              # custom components used
-    |   ├── config                  # configuration
-    |   ├── reducers                # reducers (redux)
-    |   ├── routes                  # routing navigation
-    |   ├── screens                 # screen of each page 
-    |   ├── themes                  # theme styling
-    |   └── index.js
+    │   ├── actions                 # redux actions
+    │   ├── assets                  # assets (such as linked font)
+    │   ├── components              # custom components used
+    │   ├── config                  # configuration
+    │   ├── reducers                # reducers (redux)
+    │   ├── routes                  # routing navigation
+    │   ├── screens                 # screen of each page 
+    │   ├── themes                  # theme styling
+    │   └── index.js
     ├── ...
-    |
+    │
 
 
 ## Installation
