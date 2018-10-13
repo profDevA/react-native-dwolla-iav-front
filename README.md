@@ -3,7 +3,7 @@
 My starter kit for react native projects.  
 
 This starter is using:
-* [React Native](https://facebook.github.io/react-native/) 0.57.2
+* [React Native](https://facebook.github.io/react-native/) 0.57.3
 * [React Native Material UI](https://github.com/xotahal/react-native-material-ui) 1.30.1
 * [React Navigation](https://github.com/react-navigation/react-navigation) 2.18.0
 * React-redux 
