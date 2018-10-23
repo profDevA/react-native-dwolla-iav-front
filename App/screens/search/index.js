@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { View, Text, Image, StatusBar } from 'react-native'
 import { Toolbar  } from 'react-native-material-ui'
-import { Container }  from '@components'
+import { Container }  from '@commons'
 
 // redux stuffs
 import { connect } from 'react-redux'
