@@ -6,7 +6,7 @@ import AppNavigator from './routes'
 
 import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
-import reducer from './reducers'
+import reducer from './redux/reducers'
 import thunk from 'redux-thunk'
 
 import { GoogleAnalyticsTracker } from 'react-native-google-analytics-bridge'
