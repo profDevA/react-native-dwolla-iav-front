@@ -6,7 +6,7 @@ import { Container }  from '@components'
 // redux stuffs
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { ActionCreators } from '../../actions'
+import { ActionCreators } from '../../redux/actions'
 
 class ListView extends Component {
 	constructor(props, context) {

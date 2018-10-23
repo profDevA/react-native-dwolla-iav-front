@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import { View, Text, Image, StatusBar } from 'react-native'
-import { Toolbar  } from 'react-native-material-ui'
+import { View, Text, Image, StatusBar, TouchableOpacity, Linking } from 'react-native'
+import { Toolbar, COLOR  } from 'react-native-material-ui'
 import { Container }  from '@components'
 
 // redux stuffs
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { ActionCreators } from '../../actions'
+import { ActionCreators } from '../../redux/actions'
 
 
 class HomeView extends Component {
@@ -52,6 +52,13 @@ class HomeView extends Component {
 				/>
 				<View style={{ flex: 1, justifyContent: 'center',alignItems: 'center'}}>
 					<Text>Home</Text>
+				</View>
+				<View style={{ flexDirection: 'row', justifyContent: 'center',alignItems: 'center', paddingVertical: 10 }}>
+					<Text style={{ color: COLOR.grey500, fontSize: 12 }}>Supported by:</Text>
+					<View style={{ width: 5 }} />
+					<TouchableOpacity onPress={ () => { Linking.openURL('https://www.crowdbotics.com/'); } }>
+						<Text style={{ color: COLOR.orange500 }}>Crowdbotics</Text>
+					</TouchableOpacity>
 				</View>
 			</Container>
 		);
