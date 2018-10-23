@@ -73,6 +73,7 @@ You might need to compile glog on first install or after update component
     $ cd node_modules/react-native/scripts ; ./ios-install-third-party.sh ; cd ../../../ 
     $ cd node_modules/react-native/third-party/glog-0.3.5/ ; ./configure ; cd ../../../../
 
+Reference is here https://github.com/facebook/react-native/issues/20774
 
 ## Buy me a Coffee
 
