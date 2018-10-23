@@ -1,4 +1,4 @@
-import { createReducer } from '@components'
+import { createReducer } from '@commons'
 import * as types from '../actions/types'
 
 

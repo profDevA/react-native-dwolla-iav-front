@@ -1,6 +1,6 @@
 import { Platform } from 'react-native'
 import { COLOR } from 'react-native-material-ui'
-import { isIphoneX } from '@components'
+import { isIphoneX } from '@commons'
 
 export const uiTheme = {
   palette: {
