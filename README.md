@@ -15,7 +15,7 @@ The folder following known best practices, arranged as:
     
     ├── App
     │   ├── assets                  # assets (such as linked font)
-    │   ├── components              # custom components used
+    │   ├── commons                 # custom components used
     │   ├── config                  # configuration
     │   ├── redux
     │   │   ├── actions             # redux actions
