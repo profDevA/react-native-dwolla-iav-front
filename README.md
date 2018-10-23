@@ -14,11 +14,12 @@ This starter is using:
 The folder following known best practices, arranged as:
     
     ├── App
-    │   ├── actions                 # redux actions
     │   ├── assets                  # assets (such as linked font)
     │   ├── components              # custom components used
     │   ├── config                  # configuration
-    │   ├── reducers                # reducers (redux)
+    │   ├── redux
+    │   │   ├── actions             # redux actions
+    │   │   └── reducers            # reducers (redux)
     │   ├── routes                  # routing navigation
     │   ├── screens                 # screen of each page 
     │   ├── themes                  # theme styling
@@ -62,6 +63,16 @@ Now
 or
 
     $ react-native run-android
+    
+## Troubleshoot
+
+### On IOS 
+
+You might need to compile glog on first install or after update component
+
+    $ cd node_modules/react-native/scripts ; ./ios-install-third-party.sh ; cd ../../../ 
+    $ cd node_modules/react-native/third-party/glog-0.3.5/ ; ./configure ; cd ../../../../
+
 
 ## Buy me a Coffee
 
