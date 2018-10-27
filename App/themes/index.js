@@ -8,8 +8,8 @@ export const uiTheme = {
   },
   toolbar: {
     container: {
-      height: Platform.OS === 'ios' ? (isIphoneX() ? 84 : 64) : 74, 
-    	paddingTop:  Platform.OS === 'ios' ? (isIphoneX() ? 39 : 20) : 24,
+      height: Platform.OS === 'ios' ? (isIphoneX() ? 84 : 64) : 50, // 74, 
+    	paddingTop:  Platform.OS === 'ios' ? (isIphoneX() ? 39 : 20) : 0, // 24,
       elevation: 0,
       shadowColor: COLOR.transparent,
       zIndex: 0,

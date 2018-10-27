@@ -3,9 +3,9 @@
 My starter kit for react native projects.  
 
 This starter is using:
-* [React Native](https://facebook.github.io/react-native/) 0.57.3
+* [React Native](https://facebook.github.io/react-native/) 0.57.4
 * [React Native Material UI](https://github.com/xotahal/react-native-material-ui) 1.30.1
-* [React Navigation](https://github.com/react-navigation/react-navigation) 2.18.1
+* [React Navigation](https://github.com/react-navigation/react-navigation) 2.18.2
 * React-redux 
 * [Screen Tracking Google Analytic](https://github.com/idehub/react-native-google-analytics-bridge)
 
@@ -74,6 +74,14 @@ You might need to compile glog on first install or after update component
     $ cd node_modules/react-native/third-party/glog-0.3.5/ ; ./configure ; cd ../../../../
 
 Reference is here https://github.com/facebook/react-native/issues/20774
+
+### On Android
+
+After upgrading/update new component, you will need to clear cache   
+    
+    $ cd android ; ./gradlew clean ; cd ..
+
+Then re-open your android studio 
 
 ## Buy me a Coffee
 
