@@ -34,6 +34,8 @@ The folder following known best practices, arranged as:
 
 To create new project using this, you need to copy/clone this to your local.
 
+    $ git clone https://github.com/sunaryohadi/RNSail.git MyApp
+
 ### Rename your Project
 
 Then use [react-native-rename](https://github.com/junedomingo/react-native-rename) to rename the project from it's default RNStarter
