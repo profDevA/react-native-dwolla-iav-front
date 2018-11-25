@@ -1,18 +1,20 @@
 import React from 'react';
-import { createStackNavigator } from 'react-navigation'
+import { createStackNavigator, createAppContainer } from 'react-navigation'
 
 import InitView from '../screens/_init'
 
 import { mainTab } from './maintab'
 
-const OlelangRouter = createStackNavigator({
+const AppNavigator = createStackNavigator({
 	Init: { screen: InitView },
 	MainTab: mainTab,
 },
 {
-	navigationOptions: {
+	defaultNavigationOptions: {
 		header: null,
 	}
 });
 
-export default OlelangRouter;
+const AppContainer = createAppContainer(AppNavigator);
+
+export default AppContainer;

@@ -1,6 +1,6 @@
 import { AsyncStorage } from 'react-native'
-// import { Api }  from '@commons'
-import * as types from './types'
+// import { Api }  from '@lib'
+import * as types from '../types'
 
 export function getToken() {
 	return (dispatch, getState) => {

@@ -6,7 +6,7 @@ import HomeView from '../../screens/home'
 export const homeStack = createStackNavigator({
 		Home: { screen: HomeView },
 	},{
-		navigationOptions: {
+		defaultNavigationOptions: {
 			header: null,
 		}
 	});

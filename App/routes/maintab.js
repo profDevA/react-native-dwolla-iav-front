@@ -19,7 +19,7 @@ export const mainTab = createBottomTabNavigator({
 		animationEnabled: false,
 		tabBarOptions: bottomTabOptions,
 
-		navigationOptions: ({ navigation }) => ({
+		defaultNavigationOptions: ({ navigation }) => ({
 			tabBarOnPress: (tab) => {
 				const { isFocused, state, dispatch } = tab.navigation;
 
