@@ -11,17 +11,19 @@ This starter is using:
 
 ## Folder Structure
 
-The folder following known best practices, arranged as:
+The folder arranged as:
     
     ├── App
-    │   ├── assets                  # assets (such as linked font)
-    │   ├── lib                     # custom library used
+    │   ├── assets                  # assets (such as fonts, image, sound & etc)
+    │   ├── lib                     # custom library, import using '@lib'
     │   ├── config                  # configuration
     │   ├── redux
     │   │   ├── actions             # redux actions
     │   │   └── reducers            # reducers (redux)
     │   ├── routes                  # routing navigation
-    │   ├── screens                 # screen of each page 
+    │   ├── screens                 # screen pages
+    │   │   ├── common              # common component, import using '@common'
+    │   │   └── ...                 # screen   
     │   ├── themes                  # theme styling
     │   └── index.js
     ├── ...
