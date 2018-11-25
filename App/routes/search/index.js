@@ -6,7 +6,7 @@ import SearchView from '../../screens/search'
 export const searchStack = createStackNavigator({
 		Search: { screen: SearchView },
 	},{
-		navigationOptions: {
+		defaultNavigationOptions: {
 			header: null,
 		}
 	});

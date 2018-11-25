@@ -6,7 +6,7 @@ import UserView from '../../screens/user'
 export const userStack = createStackNavigator({
 		UserView: { screen: UserView },
 	},{
-		navigationOptions: {
+		defaultNavigationOptions: {
 			header: null,
 		}
 	});

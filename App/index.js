@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {Platform, StyleSheet, Text, View} from 'react-native'
 import { ThemeContext, getTheme } from 'react-native-material-ui'
 
-import AppNavigator from './routes'
+import AppContainer from './routes'
 
 import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
@@ -46,7 +46,7 @@ export default class App extends Component {
     return (
       <Provider store={store}>
         <ThemeContext.Provider value={getTheme(uiTheme)}>
-          <AppNavigator 
+          <AppContainer 
             onNavigationStateChange={(prevState, currentState) => {
               const currentScreen = getActiveRouteName(currentState);
               const prevScreen = getActiveRouteName(prevState);

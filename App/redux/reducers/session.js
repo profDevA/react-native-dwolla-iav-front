@@ -1,5 +1,5 @@
-import { createReducer } from '@commons'
-import * as types from '../actions/types'
+import { createReducer } from '@lib'
+import * as types from '../types'
 
 
 export const user = createReducer( null, {
