@@ -30,7 +30,6 @@ target 'RNSail' do
   # Added by component react-native link
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
   pod 'react-native-fast-image', :path => '../node_modules/react-native-fast-image'
-
   pod 'react-native-google-analytics-bridge', :path => '../node_modules/react-native-google-analytics-bridge'
 
 end
