@@ -21,12 +21,14 @@ class UserView extends Component {
 	} 
 
 	render() {
+		const { navigate } = this.props.navigation;
+		
 		return (
 			<Container>
 				<Toolbar
 					centerElement="User"
 					rightElement="notifications"
-					onRightElementPress={() => null }
+					onRightElementPress={() => navigate('Notification') }
 				/>
 				<View style={{ flex: 1, justifyContent: 'center',alignItems: 'center'}}>
 					<Text>User</Text>

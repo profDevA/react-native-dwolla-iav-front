@@ -34,12 +34,13 @@ class HomeView extends Component {
 	}
 
 	render() {
+		const { navigate } = this.props.navigation;
 		return (
 			<Container>
 				<Toolbar
 					centerElement={ this._logo() } 
 					rightElement="notifications"
-					onRightElementPress={() => null }
+					onRightElementPress={() => navigate('Notification') }
 					searchable={{
 						autoFocus: true,
 						placeholder: 'Cari',

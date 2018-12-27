@@ -8,7 +8,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { ActionCreators } from '../../redux/actions'
 
-class SearchView extends Component {
+class NotificationView extends Component {
 	constructor(props, context) {
 		super(props, context);
 		this.state = {
@@ -17,21 +17,21 @@ class SearchView extends Component {
 	}
 	
 	componentDidMount() {
-		console.log('search', this.props);
+		console.log('list', this.props);
 	} 
 
 	render() {
-		const { navigate } = this.props.navigation;
-		
+        const { goBack } = this.props.navigation;
+        
 		return (
 			<Container>
 				<Toolbar
-					centerElement="Search"
-					rightElement="notifications"
-					onRightElementPress={() => navigate('Notification') }
+                    leftElement="chevron-left"
+                    onLeftElementPress={() => goBack() }
+					centerElement="Notification"
 				/>
 				<View style={{ flex: 1, justifyContent: 'center',alignItems: 'center'}}>
-					<Text>Search</Text>
+					<Text>Notification List here</Text>
 				</View>
 			</Container>
 		);
@@ -47,4 +47,4 @@ export default connect ( (state)=>{
 	return {
 		user: state.user
 	}
-}, mapDispatchToProps)(SearchView);
+}, mapDispatchToProps)(NotificationView);

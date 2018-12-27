@@ -3,10 +3,10 @@
 My starter kit for react native projects.  
 
 This starter is using:
-* [React Native](https://facebook.github.io/react-native/) 0.57.7
+* [React Native](https://facebook.github.io/react-native/) 0.57.8
 * [React Native Material UI](https://github.com/xotahal/react-native-material-ui) 1.30.1
-* [React Navigation](https://github.com/react-navigation/react-navigation) 3.0.2
-* React-redux 5.1.1
+* [React Navigation](https://github.com/react-navigation/react-navigation) 3.0.9
+* React-redux 6.0.0
 * [Screen Tracking Google Analytic](https://github.com/idehub/react-native-google-analytics-bridge)
 
 ## Folder Structure
@@ -16,10 +16,10 @@ The folder arranged as:
     ├── App
     │   ├── assets                  # assets (such as fonts, image, sound & etc)
     │   ├── lib                     # custom library, import using '@lib'
-    │   ├── config                  # configuration
+    │   ├── config                  # configuration, import using '@config'
     │   ├── redux
     │   │   ├── actions             # redux actions
-    │   │   └── reducers            # reducers (redux)
+    │   │   └── reducers            # reducers
     │   ├── routes                  # routing navigation
     │   ├── screens                 # screen pages
     │   │   ├── common              # common component, import using '@common'
