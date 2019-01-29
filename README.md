@@ -32,9 +32,9 @@ The folder arranged as:
 
 ## More on ...
 
-* [Folder Naming Guidelines (coming soon)](FOLDER.md)
-* [Coding Guidelines (coming soon)](CODING.md)
-* [Styling Guidelines (coming soon)](STYLING.md)
+* [Folder Naming Guidelines](docs/Folder.md)  (coming soon)
+* [Coding Guidelines](docs/Coding.md)  (coming soon)
+* [Styling Guidelines](docs/Styling.md)  (coming soon)
 
 ## Installation
 
