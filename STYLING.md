@@ -1,2 +1,1 @@
-# RNSail 
-## Styling Guidelines
+# RNSail - Styling Guidelines

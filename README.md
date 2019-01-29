@@ -8,11 +8,6 @@ My starter kit for react native projects.
 * React-redux 6.0.0
 * ~~[Screen Tracking Google Analytic](https://github.com/idehub/react-native-google-analytics-bridge)~~
 
-## Guidelines
-
-* [a relative link](FOLDER.md)Folder Naming Guidelines (coming soon)
-* [a relative link](CODING.md)Coding Guidelines (coming soon)
-* [a relative link](STYLING.md)Styling Guidelines (coming soon)
 
 ## Folder Structure
 
@@ -34,6 +29,12 @@ The folder arranged as:
     ├── ...
     │
 
+
+## More on ...
+
+* [Folder Naming Guidelines (coming soon)](FOLDER.md)
+* [Coding Guidelines (coming soon)](CODING.md)
+* [Styling Guidelines (coming soon)](STYLING.md)
 
 ## Installation
 

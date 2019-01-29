@@ -1,2 +1,1 @@
-# RNSail 
-## Coding Guidelines
+# RNSail - Coding Guidelines
