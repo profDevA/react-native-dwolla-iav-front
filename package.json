@@ -9,25 +9,24 @@
   "dependencies": {
     "react": "16.6.3",
     "react-native": "0.57.8",
-    "react-native-fast-image": "^5.1.1",
-    "react-native-gesture-handler": "^1.0.12",
-    "react-native-google-analytics-bridge": "^7.0.0",
+    "react-native-fast-image": "^5.1.2",
+    "react-native-gesture-handler": "^1.0.15",
     "react-native-material-ui": "^1.30.1",
-    "react-native-vector-icons": "^6.1.0",
+    "react-native-vector-icons": "^6.2.0",
     "react-navigation": "^3.0.9",
     "react-redux": "^6.0.0",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
-    "babel-jest": "23.6.0",
-    "jest": "23.6.0",
-    "metro-react-native-babel-preset": "^0.51.1",
+    "babel-jest": "24.0.0",
+    "jest": "24.0.0",
+    "metro-react-native-babel-preset": "0.51.1",
     "react-test-renderer": "16.6.3"
   },
   "rnpm": {
     "assets": [
-      "./App/assets/fonts"
+      "./src/assets/fonts"
     ]
   },
   "jest": {

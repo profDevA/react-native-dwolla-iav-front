@@ -7,7 +7,7 @@ This starter is using:
 * [React Native Material UI](https://github.com/xotahal/react-native-material-ui) 1.30.1
 * [React Navigation](https://github.com/react-navigation/react-navigation) 3.0.9
 * React-redux 6.0.0
-* [Screen Tracking Google Analytic](https://github.com/idehub/react-native-google-analytics-bridge)
+* ~~[Screen Tracking Google Analytic](https://github.com/idehub/react-native-google-analytics-bridge)~~
 
 ## Folder Structure
 
@@ -15,15 +15,15 @@ The folder arranged as:
     
     ├── App
     │   ├── assets                  # assets (such as fonts, image, sound & etc)
-    │   ├── lib                     # custom library, import using '@lib'
+    │   ├── common                  # widely used Custom Component, import using '@common'
+    │   ├── lib                     # custom functions/library, import using '@lib'
     │   ├── config                  # configuration, import using '@config'
     │   ├── redux
     │   │   ├── actions             # redux actions
     │   │   └── reducers            # reducers
     │   ├── routes                  # routing navigation
-    │   ├── screens                 # screen pages
-    │   │   ├── common              # common component, import using '@common'
-    │   │   └── ...                 # screen   
+    │   ├── screens                 # All screen pages are here
+    │   │   └── ...                 # screens   
     │   ├── themes                  # theme styling
     │   └── index.js
     ├── ...
@@ -49,11 +49,12 @@ Then use [react-native-rename](https://github.com/junedomingo/react-native-renam
 
 After rename, you have to install first. This project created using yarn.
 
-    $ yarn
+    $ yarn install
+    $ react-native link
 
-### pod install for IOS
+### Cocoapods for IOS (optional)
 
-For IOS development, it's also need to install the pods (cocoapods), before it's can be run.
+For IOS development, if your prefer using Cocoapods, rename ios/Podfile.txt into ios/Podfile, and run.
 
     $ cd ios
     $ pod install
@@ -70,22 +71,7 @@ or
     
 ## Troubleshoot
 
-### On IOS 
-
-You might need to compile glog on first install or after update component
-
-    $ cd node_modules/react-native/scripts ; ./ios-install-third-party.sh ; cd ../../../ 
-    $ cd node_modules/react-native/third-party/glog-0.3.5/ ; ./configure ; cd ../../../../
-
-Reference is here https://github.com/facebook/react-native/issues/20774
-
-### On Android
-
-After upgrading/update new component, you will need to clear cache   
-    
-    $ cd android ; ./gradlew clean ; cd ..
-
-Then re-open your android studio 
+-
 
 ## Buy me a Coffee
 
