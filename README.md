@@ -13,7 +13,7 @@ My starter kit for react native projects.
 
 The folder arranged as:
     
-    ├── App
+    ├── src
     │   ├── assets                  # assets (such as fonts, image, sound & etc)
     │   ├── components              # widely used Custom Components, import using '@components'
     │   ├── lib                     # custom functions/library, import using '@lib'

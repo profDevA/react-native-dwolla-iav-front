@@ -2,7 +2,7 @@
 
 The folder arranged as:
     
-    ├── App
+    ├── src
     │   ├── assets                  # assets (such as fonts, image, sound & etc)
     │   ├── components              # widely used Custom Components, import using '@components'
     │   ├── lib                     # custom functions/library, import using '@lib'
@@ -19,15 +19,15 @@ The folder arranged as:
     ├── ...
     │
 
-## Under /src/screens
-
+## /src/screens
+ 
 * Grouping base on features with folder naming in lowercase. 
 * More __explicitly__ naming the screen filename (reflect the content), eg.: auth/Signin.js.
 * If a screen become more complicated, breakdown into folder name using __Capitalization__ (which represent a screen), eg: home/Home as shown below 
 
-Eg. of the screens:
+Eg. of the screens arangments:
 
-    ├── App
+    ├── src
     │   ├── ...
     │   └── screens                     
     │   │   ├── auth                    # grouping : authentication
@@ -49,3 +49,11 @@ Eg. of the screens:
     │   ├── ...
     ├── ...
     │
+
+## /src/components
+
+The components folder is for __reusable components__, sometimes called \_atomic components\_. According to React naming conventions, the first letter should be uppercase.
+
+## Reference
+
+- https://medium.freecodecamp.org/how-to-structure-your-project-and-manage-static-resources-in-react-native-6f4cfc947d92
