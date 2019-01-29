@@ -33,10 +33,12 @@ class HomeView extends Component {
   }
 
   render() {
-    const { navigate } = this.props.navigation
+    const { navigate, openDrawer } = this.props.navigation
     return (
       <Container>
         <Toolbar
+          leftElement="menu"
+          onLeftElementPress={() => openDrawer() }
           centerElement={this._logo()}
           rightElement="notifications"
           onRightElementPress={() => navigate('Notification')}
