@@ -19,26 +19,32 @@ The folder arranged as:
     ├── ...
     │
 
-## Under the /src/screens
+## Under /src/screens
 
-Under the screens folder, grouping base on features with folder naming in lowercase. 
-Preferred to naming a screen file not using index.js, but more **explicitly** showing the content, eg.: home/Home.js, auth/Signin.js
+* Grouping base on features with folder naming in lowercase. 
+* More __explicitly__ naming the screen filename (reflect the content), eg.: auth/Signin.js.
+* If a screen become more complicated, breakdown into folder name using __Capitalization__ (which represent a screen), eg: home/Home as shown below 
 
 Eg. of the screens:
 
     ├── App
     │   ├── ...
-    │   └── screens                     # All screen pages are here
+    │   └── screens                     
     │   │   ├── auth                    # grouping : authentication
     │   │   │   ├── Signin.js           # Signin screen
     │   │   │   ├── Signup.js           # Signup screen
     │   │   │   ├── SignupConfirm.js    # Signup Confirm screen
     │   │   │   └── Forgot.js           # Forgot Password screen
     │   │   ├── home                    # grouping : home tab
-    │   │   │   ├── Home.js             # Home screen
+    │   │   │   ├── Home                # Home screen
+    │   │   │   │   ├── _news.js        # Home component: News list 
+    │   │   │   │   ├── _features.js    # Home component: Features list 
+    │   │   │   │   ├── styles.js       # Home styles 
+    │   │   │   │   └── index.js        # main script of Home
+    │   │   │   ├── News.js             # News screen
     │   │   │   ├── Features.js         # Features screen
-    │   │   │   ├── FeatureDetail.js    # Feature Detail screen
-    │   │   │   └── ...
+    │   │   │   ├── ...
+    │   │   │   
     │   │   └── ...                        
     │   ├── ...
     ├── ...
