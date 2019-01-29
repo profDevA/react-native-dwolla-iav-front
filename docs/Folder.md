@@ -25,7 +25,7 @@ The folder arranged as:
 * More __explicitly__ naming the screen filename (reflect the content), eg.: auth/Signin.js.
 * If a screen become more complicated, breakdown into folder name using __Capitalization__ (which represent a screen), eg: home/Home as shown below 
 
-Eg. of the screens arangments:
+Eg. of the screens arrangements:
 
     ├── src
     │   ├── ...
@@ -36,7 +36,7 @@ Eg. of the screens arangments:
     │   │   │   ├── SignupConfirm.js    # Signup Confirm screen
     │   │   │   └── Forgot.js           # Forgot Password screen
     │   │   ├── home                    # grouping : home tab
-    │   │   │   ├── Home                # Home screen
+    │   │   │   ├── Home                # Home (capitalization), represent a single screen
     │   │   │   │   ├── _news.js        # Home component: News list 
     │   │   │   │   ├── _features.js    # Home component: Features list 
     │   │   │   │   ├── styles.js       # Home styles 
@@ -52,7 +52,11 @@ Eg. of the screens arangments:
 
 ## /src/components
 
-The components folder is for __reusable components__, sometimes called \_atomic components\_. According to React naming conventions, the first letter should be uppercase.
+The components folder is for __reusable components__, sometimes called _atomic components_. According to React naming conventions, the first letter should be uppercase.
+
+## /src/lib
+
+Library, the place for reusable also, but more spesific to function or _non atomic components_, eg: isIphoneX().
 
 ## Reference
 
