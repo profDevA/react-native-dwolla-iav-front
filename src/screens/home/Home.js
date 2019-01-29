@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { View, Text } from 'react-native'
 import { Toolbar } from 'react-native-material-ui'
-import { Container, SupportedBy } from '@common'
+import { Container, SupportedBy } from '@components'
 
 // redux stuffs
 import { connect } from 'react-redux'
@@ -33,10 +33,12 @@ class HomeView extends Component {
   }
 
   render() {
-    const { navigate } = this.props.navigation
+    const { navigate, openDrawer } = this.props.navigation
     return (
       <Container>
         <Toolbar
+          leftElement="menu"
+          onLeftElementPress={() => openDrawer() }
           centerElement={this._logo()}
           rightElement="notifications"
           onRightElementPress={() => navigate('Notification')}

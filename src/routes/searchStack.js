@@ -1,7 +1,7 @@
 import React from 'react'
 import { createStackNavigator } from 'react-navigation'
 import { Icon } from 'react-native-material-ui'
-import Search from '../screens/Search'
+import Search from '../screens/search/Search'
 
 export const searchStack = createStackNavigator(
   {

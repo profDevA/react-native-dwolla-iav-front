@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import { View, Text } from 'react-native'
 import { Toolbar } from 'react-native-material-ui'
-import { Container } from '@common'
+import { Container } from '@components'
 
 // redux stuffs
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { ActionCreators } from '../../redux/actions'
 
-class ListView extends Component {
+class ProfileView extends Component {
   constructor(props, context) {
     super(props, context)
     this.state = {
@@ -17,7 +17,7 @@ class ListView extends Component {
   }
 
   componentDidMount() {
-    console.log('list', this.props)
+    console.log('user', this.props)
   }
 
   render() {
@@ -26,14 +26,14 @@ class ListView extends Component {
     return (
       <Container>
         <Toolbar
-          centerElement="List"
+          centerElement="User"
           rightElement="notifications"
           onRightElementPress={() => navigate('Notification')}
         />
         <View
           style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}
         >
-          <Text>List</Text>
+          <Text>User</Text>
         </View>
       </Container>
     )
@@ -51,4 +51,4 @@ export default connect(
     }
   },
   mapDispatchToProps
-)(ListView)
+)(ProfileView)

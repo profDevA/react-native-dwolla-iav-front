@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, Image, StatusBar } from 'react-native'
 import { Toolbar } from 'react-native-material-ui'
-import { Container } from '@common'
+import { Container } from '@components'
 
 // redux stuffs
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { ActionCreators } from '../../redux/actions'
 
-class NotificationView extends Component {
+class SearchView extends Component {
   constructor(props, context) {
     super(props, context)
     this.state = {
@@ -17,23 +17,23 @@ class NotificationView extends Component {
   }
 
   componentDidMount() {
-    console.log('list', this.props)
+    console.log('search', this.props)
   }
 
   render() {
-    const { goBack } = this.props.navigation
+    const { navigate } = this.props.navigation
 
     return (
       <Container>
         <Toolbar
-          leftElement="chevron-left"
-          onLeftElementPress={() => goBack()}
-          centerElement="Notification"
+          centerElement="Search"
+          rightElement="notifications"
+          onRightElementPress={() => navigate('Notification')}
         />
         <View
           style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}
         >
-          <Text>Notification List here</Text>
+          <Text>Search</Text>
         </View>
       </Container>
     )
@@ -51,4 +51,4 @@ export default connect(
     }
   },
   mapDispatchToProps
-)(NotificationView)
+)(SearchView)

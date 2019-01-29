@@ -2,20 +2,20 @@
 
 My starter kit for react native projects.  
 
-This starter is using:
 * [React Native](https://facebook.github.io/react-native/) 0.57.8
 * [React Native Material UI](https://github.com/xotahal/react-native-material-ui) 1.30.1
 * [React Navigation](https://github.com/react-navigation/react-navigation) 3.0.9
 * React-redux 6.0.0
 * ~~[Screen Tracking Google Analytic](https://github.com/idehub/react-native-google-analytics-bridge)~~
 
+
 ## Folder Structure
 
 The folder arranged as:
     
-    ├── App
+    ├── src
     │   ├── assets                  # assets (such as fonts, image, sound & etc)
-    │   ├── common                  # widely used Custom Component, import using '@common'
+    │   ├── components              # widely used Custom Components, import using '@components'
     │   ├── lib                     # custom functions/library, import using '@lib'
     │   ├── config                  # configuration, import using '@config'
     │   ├── redux
@@ -29,6 +29,12 @@ The folder arranged as:
     ├── ...
     │
 
+
+## More on ...
+
+* [Folder Structure Guidelines](docs/Folder.md)
+* [Coding Guidelines](docs/Coding.md)  (coming soon)
+* [Styling Guidelines](docs/Styling.md)  (coming soon)
 
 ## Installation
 
@@ -47,8 +53,6 @@ Then use [react-native-rename](https://github.com/junedomingo/react-native-renam
 
 ### Install using yarn
 
-After rename, you have to install first. This project created using yarn.
-
     $ yarn install
     $ react-native link
 
@@ -60,19 +64,13 @@ For IOS development, if your prefer using Cocoapods, rename ios/Podfile.txt into
     $ pod install
     $ cd ..
 
-### run 
-
-Now 
+### Run 
 
     $ react-native run-ios 
 or
 
     $ react-native run-android
     
-## Troubleshoot
-
--
-
 ## Buy me a Coffee
 
 If you feel this is useful, please consider to buy me a cup of coffee or two.
