@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
-import { View, Text, Image, StatusBar } from 'react-native'
+import { View, Text } from 'react-native'
 import { Toolbar } from 'react-native-material-ui'
-import { Container } from '@common'
+import { Container } from '@components'
 
 // redux stuffs
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { ActionCreators } from '../../redux/actions'
 
-class SearchView extends Component {
+class ListView extends Component {
   constructor(props, context) {
     super(props, context)
     this.state = {
@@ -17,7 +17,7 @@ class SearchView extends Component {
   }
 
   componentDidMount() {
-    console.log('search', this.props)
+    console.log('list', this.props)
   }
 
   render() {
@@ -26,14 +26,14 @@ class SearchView extends Component {
     return (
       <Container>
         <Toolbar
-          centerElement="Search"
+          centerElement="List"
           rightElement="notifications"
           onRightElementPress={() => navigate('Notification')}
         />
         <View
           style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}
         >
-          <Text>Search</Text>
+          <Text>List</Text>
         </View>
       </Container>
     )
@@ -51,4 +51,4 @@ export default connect(
     }
   },
   mapDispatchToProps
-)(SearchView)
+)(ListView)
