@@ -1,0 +1,2 @@
+# RNSail 
+## Folder Naming Guidelines
