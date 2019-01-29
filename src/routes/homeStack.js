@@ -1,7 +1,7 @@
 import React from 'react'
 import { createStackNavigator } from 'react-navigation'
 import { Icon } from 'react-native-material-ui'
-import HomeView from '../screens/Home'
+import HomeView from '../screens/home/Home'
 
 export const homeStack = createStackNavigator(
   {

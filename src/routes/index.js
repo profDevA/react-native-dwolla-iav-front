@@ -5,10 +5,10 @@ import {
 } from 'react-navigation'
 
 import Init from '../screens/_init'
-import Notification from '../screens/Notification'
+import Notification from '../screens/notification/Notification'
 import { mainTab } from './mainTab'
 
-import Drawer from '../screens/Drawer' // Drawer Screen
+import Drawer from '../screens/drawer/Drawer' // Drawer Screen
 
 const AppNavigator = createStackNavigator(
   {

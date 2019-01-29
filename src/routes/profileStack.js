@@ -1,7 +1,7 @@
 import React from 'react'
 import { createStackNavigator } from 'react-navigation'
 import { Icon } from 'react-native-material-ui'
-import Profile from '../screens/Profile'
+import Profile from '../screens/profile/Profile'
 
 export const profileStack = createStackNavigator(
   {
