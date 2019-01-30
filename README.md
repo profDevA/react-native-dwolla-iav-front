@@ -8,6 +8,8 @@ My starter kit for react native projects.
 * React-redux 6.0.0
 * ~~[Screen Tracking Google Analytic](https://github.com/idehub/react-native-google-analytics-bridge)~~
 
+Added sample:
+* Flatlist with axios. (Most of my React Native using this)
 
 ## Folder Structure
 
