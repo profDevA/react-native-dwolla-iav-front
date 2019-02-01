@@ -1,5 +1,5 @@
-import { createReducer } from '@lib'
 import * as types from '../types'
+import { createReducer } from '@lib'
 
 export const user = createReducer(null, {
   [types.GET_TOKEN](state, action) {
