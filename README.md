@@ -1,10 +1,10 @@
-# RNSail - React Native Starter
+# RNSail - React Native Starter 0.2.0
 
 My starter kit for react native projects.  
 
-* [React Native](https://facebook.github.io/react-native/) 0.57.8
+* [React Native](https://facebook.github.io/react-native/) 0.58.5
 * [React Native Material UI](https://github.com/xotahal/react-native-material-ui) 1.30.1
-* [React Navigation](https://github.com/react-navigation/react-navigation) 3.0.9
+* [React Navigation](https://github.com/react-navigation/react-navigation) 3.3.0
 * React-redux 6.0.0
 * ~~[Screen Tracking Google Analytic](https://github.com/idehub/react-native-google-analytics-bridge)~~
 
@@ -57,14 +57,6 @@ Then use [react-native-rename](https://github.com/junedomingo/react-native-renam
 
     $ yarn install
     $ react-native link
-
-### Cocoapods for IOS (optional)
-
-For IOS development, if your prefer using Cocoapods, rename ios/Podfile.txt into ios/Podfile, and run.
-
-    $ cd ios
-    $ pod install
-    $ cd ..
 
 ### Run 
 
