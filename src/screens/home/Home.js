@@ -38,7 +38,7 @@ class HomeView extends Component {
       <Container>
         <Toolbar
           leftElement="menu"
-          onLeftElementPress={() => openDrawer() }
+          onLeftElementPress={() => openDrawer()}
           centerElement={this._logo()}
           rightElement="notifications"
           onRightElementPress={() => navigate('Notification')}

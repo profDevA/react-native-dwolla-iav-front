@@ -1,44 +1,19 @@
 import React, { Component } from 'react'
 import { ThemeContext, getTheme } from 'react-native-material-ui'
 import { Provider } from 'react-redux'
-import { createStore, applyMiddleware } from 'redux'
-import reducer from './redux/reducers'
-import thunk from 'redux-thunk'
+import configureStore from './redux/store'
 import AppContainer from './routes'
 import { uiTheme } from './themes'
-
-// import { GA_TRACKING_ID } from '@config'
+import { getActiveRouteName } from '@lib'
 
 // this component is deprecated
 // import { GoogleAnalyticsTracker } from 'react-native-google-analytics-bridge'
+// import { GA_TRACKING_ID } from '@config'
 // const tracker = new GoogleAnalyticsTracker(GA_TRACKING_ID);
 
-const store = createStore(
-  reducer,
-  applyMiddleware(
-    thunk
-    // logger
-  )
-)
-
-// gets the current screen from navigation state for google tracking
-function getActiveRouteName(navigationState) {
-  if (!navigationState) {
-    return null
-  }
-  const route = navigationState.routes[navigationState.index]
-  // dive into nested navigators
-  if (route.routes) {
-    return getActiveRouteName(route)
-  }
-  return route.routeName
-}
+const store = configureStore()
 
 export default class App extends Component {
-  componentDidMount() {
-    // Entry Point of Application
-  }
-
   render() {
     return (
       <Provider store={store}>

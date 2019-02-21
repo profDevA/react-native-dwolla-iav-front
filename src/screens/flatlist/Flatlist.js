@@ -91,6 +91,7 @@ export default class FlatlistView extends Component {
   }
 
   render() {
+    const { navigate } = this.props.navigation
     return (
       <Container>
         <Toolbar
@@ -144,5 +145,5 @@ const styles = StyleSheet.create({
   row: {
     flexDirection: 'row',
     marginBottom: 4
-  },
+  }
 })
