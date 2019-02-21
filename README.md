@@ -79,6 +79,7 @@ Please find it in this articles.
 
  - https://medium.com/@kevinle/comprehensive-routing-and-navigation-in-react-native-made-easy-6383e6cdc293
  - https://medium.com/@jonlebensold/getting-started-with-react-native-redux-2b01408c0053
+ - https://medium.com/react-native-training/redux-4-ways-95a130da0cdc
  - https://reactnavigation.org/docs/getting-started.html
  - Some stackoverflow on Android/IOS settings.
  
