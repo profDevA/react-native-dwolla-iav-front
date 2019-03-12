@@ -2,10 +2,10 @@
 
 My starter kit for react native projects.  
 
-* [React Native](https://facebook.github.io/react-native/) 0.58.5
+* [React Native](https://facebook.github.io/react-native/) 0.59.0
 * [React Native Material UI](https://github.com/xotahal/react-native-material-ui) 1.30.1
-* [React Navigation](https://github.com/react-navigation/react-navigation) 3.3.0
-* React-redux 6.0.0
+* [React Navigation](https://github.com/react-navigation/react-navigation) 3.3.2
+* React-redux 6.0.1
 * ~~[Screen Tracking Google Analytic](https://github.com/idehub/react-native-google-analytics-bridge)~~
 
 Added sample:
