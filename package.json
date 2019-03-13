@@ -1,6 +1,6 @@
 {
   "name": "RNSail",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
@@ -20,11 +20,12 @@
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
-    "babel-core": "^7.0.0-bridge.0",
+    "@babel/core": "^7.3.4",
+    "@babel/runtime": "^7.3.4",
     "babel-jest": "^24.5.0",
     "jest": "^24.5.0",
     "metro-react-native-babel-preset": "^0.53.0",
-    "react-test-renderer": "16.6.3"
+    "react-test-renderer": "16.8.3"
   },
   "rnpm": {
     "assets": [
