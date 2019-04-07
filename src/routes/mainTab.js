@@ -39,12 +39,12 @@ export const mainTab = createBottomTabNavigator(
                   NavigationActions.navigate({
                     routeName: state.routes[0].routeName
                   })
-                ]
+                ],
+                key: state.key
               })
             )
           }
         } else {
-          // dispatch(NavigationActions.navigate({ routeName: state.routeName }));
           dispatch(NavigationActions.navigate({ routeName: state.routeName }))
         }
       }
