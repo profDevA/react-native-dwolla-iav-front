@@ -1,11 +1,11 @@
-# RNSail - React Native Starter 0.2.0
+# RNSail - React Native Starter 0.2.2
 
 My starter kit for react native projects.  
 
-* [React Native](https://facebook.github.io/react-native/) 0.59.3
+* [React Native](https://facebook.github.io/react-native/) 0.59.8
 * [React Native Material UI](https://github.com/xotahal/react-native-material-ui) 1.30.1
-* [React Navigation](https://github.com/react-navigation/react-navigation) 3.6.1
-* React-redux 6.0.1
+* [React Navigation](https://github.com/react-navigation/react-navigation) 3.11.0
+* React-redux 7.0.3
 * ~~[Screen Tracking Google Analytic](https://github.com/idehub/react-native-google-analytics-bridge)~~
 
 Added sample:
