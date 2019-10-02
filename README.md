@@ -1,4 +1,4 @@
-# RNSail - React Native Starter 0.2.2
+# RNSail - React Native Starter 0.3.0
 
 My starter kit for react native projects.  
 
