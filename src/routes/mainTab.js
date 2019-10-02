@@ -1,22 +1,20 @@
-import {
-  createBottomTabNavigator,
-  NavigationActions,
-  StackActions
-} from 'react-navigation'
+import {NavigationActions, StackActions} from 'react-navigation';
 
-import { homeStack } from './homeStack'
-import { searchStack } from './searchStack'
-import { flatlistStack } from './flatlistStack'
-import { profileStack } from './profileStack'
+import {createBottomTabNavigator} from 'react-navigation-tabs';
 
-import { bottomTabOptions } from './options'
+import {homeStack} from './homeStack';
+import {searchStack} from './searchStack';
+import {flatlistStack} from './flatlistStack';
+import {profileStack} from './profileStack';
+
+import {bottomTabOptions} from './options';
 
 export const mainTab = createBottomTabNavigator(
   {
     HomeStack: homeStack,
     SearchStack: searchStack,
     FlatlistStack: flatlistStack,
-    ProfileStack: profileStack
+    ProfileStack: profileStack,
   },
   {
     lazy: true,
@@ -24,30 +22,30 @@ export const mainTab = createBottomTabNavigator(
     animationEnabled: false,
     tabBarOptions: bottomTabOptions,
 
-    defaultNavigationOptions: ({ navigation }) => ({
+    defaultNavigationOptions: ({navigation}) => ({
       tabBarOnPress: tab => {
-        const { isFocused, state, dispatch } = tab.navigation
+        const {isFocused, state, dispatch} = tab.navigation;
 
         if (isFocused()) {
           if (state.index !== 0) {
-            dispatch(StackActions.popToTop())
+            dispatch(StackActions.popToTop());
           } else {
             dispatch(
               StackActions.reset({
                 index: 0,
                 actions: [
                   NavigationActions.navigate({
-                    routeName: state.routes[0].routeName
-                  })
+                    routeName: state.routes[0].routeName,
+                  }),
                 ],
-                key: state.key
-              })
-            )
+                key: state.key,
+              }),
+            );
           }
         } else {
-          dispatch(NavigationActions.navigate({ routeName: state.routeName }))
+          dispatch(NavigationActions.navigate({routeName: state.routeName}));
         }
-      }
-    })
-  }
-)
+      },
+    }),
+  },
+);
