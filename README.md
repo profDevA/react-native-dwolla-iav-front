@@ -1,15 +1,10 @@
-# RNSail - React Native Starter 0.3.0
+# RNSail - React Native Starter  0.4.0
 
 My starter kit for react native projects.  
 
-* [React Native](https://facebook.github.io/react-native/) 0.61.1
-* [React Native Material UI](https://github.com/xotahal/react-native-material-ui) 1.30.1
-* [React Navigation](https://github.com/react-navigation/react-navigation) 4.0.10
-* React-redux 7.1.1
-* ~~[Screen Tracking Google Analytic](https://github.com/idehub/react-native-google-analytics-bridge)~~
+* [React Native](https://facebook.github.io/react-native/) 0.63.2
+* [React Navigation](https://github.com/react-navigation/react-navigation) 5.x
 
-Added sample:
-* Flatlist with axios. (Most of my React Native using this)
 
 ## Folder Structure
 
@@ -20,13 +15,9 @@ The folder arranged as:
     │   ├── components              # widely used Custom Components, import using '@components'
     │   ├── lib                     # custom functions/library, import using '@lib'
     │   ├── config                  # configuration, import using '@config'
-    │   ├── redux
-    │   │   ├── actions             # redux actions
-    │   │   └── reducers            # reducers
     │   ├── routes                  # routing navigation
     │   ├── screens                 # All screen pages are here
     │   │   └── ...                 # screens   
-    │   ├── themes                  # theme styling
     │   └── index.js
     ├── ...
     │
