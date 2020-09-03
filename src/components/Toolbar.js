@@ -1,13 +1,15 @@
 import React from 'react';
 import {StyleSheet, View, Text} from 'react-native';
-import {ifIphoneX} from 'react-native-iphone-x-helper';
+import {getStatusBarHeight} from 'react-native-iphone-x-helper';
 
 const Toolbar = ({left, title = '', right}) => {
   return (
-    <View style={styles.header}>
-      {left ? left() : null}
-      <Text style={styles.title}>{title}</Text>
-      {right ? right() : null}
+    <View style={styles.container}>
+      <View style={styles.header}>
+        {left ? left() : null}
+        <Text style={styles.title}>{title}</Text>
+        {right ? right() : null}
+      </View>
     </View>
   );
 };
@@ -15,28 +17,20 @@ const Toolbar = ({left, title = '', right}) => {
 export default Toolbar;
 
 const styles = StyleSheet.create({
-  header: {
-    // position: 'absolute',
-    // top: 0,
-    // left: 0,
-    // right: 0,
-    // zIndex: 1,
-    flexDirection: 'row',
-    padding: 10,
+  container: {
     backgroundColor: '#ff000090',
-    ...ifIphoneX(
-      {
-        paddingTop: 50,
-      },
-      {
-        paddingTop: 20,
-      },
-    ),
+    paddingTop: getStatusBarHeight(true),
+  },
+  header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    height: 40,
   },
   title: {
     fontWeight: '600',
     flex: 1,
     color: 'white',
     marginHorizontal: 10,
+    fontSize: 15,
   },
 });
