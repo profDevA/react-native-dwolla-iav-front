@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
     flex: 1,
     color: 'white',
     marginHorizontal: 10,
-    fontSize: 15,
+    fontSize: 16,
+    textAlign: 'center',
   },
 });
