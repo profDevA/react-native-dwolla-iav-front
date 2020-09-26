@@ -1,4 +1,4 @@
-# RNSail - React Native Starter  0.4.0
+# React Native Dwolla IAV verification module
 
 My starter kit for react native projects.  
 
