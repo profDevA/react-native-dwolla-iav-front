@@ -2,15 +2,12 @@ import React from 'react';
 import {ScrollView, Text} from 'react-native';
 import {Container, Toolbar} from 'components';
 
-const Transaction = () => {
+const RegisterCustomer = () => {
   return (
-    <Container>
-      <Toolbar title="Transaction" />
       <ScrollView>
-        <Text>Transaction</Text>
+        <Text>Cart</Text>
       </ScrollView>
-    </Container>
   );
 };
 
-export default Transaction;
+export default RegisterCustomer;

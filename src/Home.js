@@ -1,12 +1,4 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -15,107 +7,96 @@ import {
   Text,
   StatusBar,
   Button,
+  TouchableOpacity,
+  TextInput
 } from 'react-native';
 
 import {
-  Header,
-  LearnMoreLinks,
   Colors,
-  DebugInstructions,
-  ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-const Home = ({navigation}) => {
+const Home = ({ navigation }) => {
+  const [email, setText] = useState('');
+  const getCustomerInfo = () => {
+    return fetch('http://10.0.2.2:3000/getcustomerinfo', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        email: email,
+      })
+    })
+    .then((response) => response.json())
+    .then((json) => {
+      if(json.error === false) {
+        console.log('success go to iav')
+        navigation.navigate('DwollaIAV', {
+           email: email, 
+           customerId: json.customerId,
+           firstName: json.firstName,
+           lastName: json.lastName
+         })
+      } else {
+        navigation.navigate('RegisterCustomer', { email: email })
+      }
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+  }
   return (
     <>
-      <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <Header />
-
-          <Button
-            title="Go to Jane's profile"
-            onPress={() => navigation.navigate('Profile', {name: 'Jane'})}
+        <View style={styles.body}>
+          <TextInput
+            style={styles.emailbox}
+            placeholder="Enter your email address"
+            onChangeText={email => setText(email)}
+            defaultValue={email}
           />
-
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
-          )}
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
-          </View>
-        </ScrollView>
+          <TouchableOpacity
+            onPress={() => getCustomerInfo()}
+            style={styles.button}
+          >
+            <Text style={styles.buttonTitle}>Go to IAV</Text>
+          </TouchableOpacity>
+        </View>
       </SafeAreaView>
     </>
   );
 };
 
 const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
-  },
   engine: {
     position: 'absolute',
     right: 0,
   },
   body: {
     backgroundColor: Colors.white,
+    paddingTop: 50,
+    justifyContent: 'space-around',
+    alignItems: 'center',
   },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
+  emailbox: {
+    height: 50,
+    marginBottom: 50,
     fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
   },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
+
+  button: {
+    backgroundColor: 'green',
+    width: 240,
+    alignSelf: 'center',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: 60,
   },
-  highlight: {
-    fontWeight: '700',
-  },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
-  },
+  buttonTitle: {
+    color: '#fff',
+    fontSize: 24,
+  }
 });
 
 export default Home;
